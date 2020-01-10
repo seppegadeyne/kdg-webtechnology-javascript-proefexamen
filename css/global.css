@@ -1,0 +1,68 @@
+body {
+    background-color: snow;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.kop {
+    font-size: 2em;
+    font-family: Verdana;
+    color: darkgoldenrod;
+}
+
+figure {
+    float: left;
+    margin: 0.3em;
+    padding: 0.3em;
+    border: darkgray solid thin;
+    border-radius: 0.6em;
+}
+
+section article p {
+    text-align: left;
+    font-weight: bold;
+}
+
+section {
+    clear: both;
+}
+
+article, aside {
+    background-color: lightgray;
+    border: darkgray solid thin;
+    border-radius: 0.6em;
+    margin: 0.3em;
+    padding: 0.3em;
+
+}
+
+article img {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+}
+
+.verzendknop {
+    margin: 0.3em;
+    padding: 0.3em;
+    float: right;
+}
+
+.label {
+    display: block;
+}
+
+legend {
+    font-size: 0.8em;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: italic;
+    margin-left: 0.5em;
+}
+
+.fout {
+    color: red;
+}
+
+footer {
+    clear: both;
+}

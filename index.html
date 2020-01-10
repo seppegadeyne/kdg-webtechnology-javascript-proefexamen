@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Examen Startpagina</title>
+  <meta charset="utf-8">
+  <script src="javascript/examen.js"></script>
+  <link href="css/global.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <p><img src="images/win_klein.jpg" alt="Win"/> Dobbel je rijk !</p>
+  <figure><img src="images/d1.gif" alt="afbeelding 1 oog"></figure>
+  <figure><img src="images/d2.gif" alt="afbeelding 2 ogen"></figure>
+  <figure><img src="images/d3.gif" alt="afbeelding 3 ogen"></figure>
+  <figure><img src="images/d4.gif" alt="afbeelding 4 ogen"></figure>
+  <figure><img src="images/d5.gif" alt="afbeelding 5 ogen"></figure>
+  <figure><img src="images/d6.gif" alt="afbeelding 6 ogen"></figure>
+</header>
+<main>
+  <section>
+    <form id="data" action="html/verzonden.html" method="get">
+      <!-- Na submit terug naar de huidige pagina (refresh) -->
+      <fieldset>
+        <legend>Gok het getal dat de dobbelsteen zal gooien! <br> Vul zeker al je gegevens in.</legend>
+        <p>
+          <label class="label" for="naam">Naam:</label>
+          <input type="text" id="naam" placeholder="naam met beginhoofdletter" name="naam" size="30" required/>*
+          <span class="fout" id="naamfout"></span>
+        </p>
+        <p>
+          <label class="label" for="rijksregister">Rijksregister nummer:</label>
+          <input type="text" id="rijksregister" placeholder="JJ.MM.DD-NNN.NN" name="rijksregister" size="30"/>
+          <span class="fout" id="rijksregisterfout"></span>
+        </p>
+        <p>
+          <label class="label" for="gok">Gok:</label>
+          <input type="text" id="gok" placeholder="getal van 1 tot 6" name="gok" size="30"/>
+          <span class="fout" id="gokfout"></span>
+        </p>
+        <section>
+          <p id="formulier"></p>
+        </section>
+        <input class="verzendknop" type="submit" id="verzend" value="Waag je kans!"/>
+      </fieldset>
+    </form>
+  </section>
+</main>
+<footer>
+  Om te gokken moet je minstens 18 jaar zijn...
+</footer>
+<script>
+  initValidatie();
+</script>
+</body>
+</html>
